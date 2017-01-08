@@ -1,9 +1,11 @@
 body {
     background-color: #000000;
-}
-p {
     color: #ffffff;
     text-align:center;
+    
+}
+#baudelaire {
+    padding-left: 200px;
 }
 img {
     display: block;
