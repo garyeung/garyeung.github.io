@@ -1,10 +1,14 @@
+/* Sticky footer header styles*/
 html {
   position: relative;
   min-height: 100%;
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    margin-bottom: 160px;
+     /* Margin bottom by footer height */
+    margin-top: 170px;
+    background-color: #f5f5f5;
 }
 .footer {
   position: absolute;
@@ -12,5 +16,111 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #2b2b2b;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #b2b2b2;
+}
+/*header*/
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 170px;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+.fen {
+    align-self: center;
+}
+.header > nav a {
+  color: #fff;
+}
+.header > nav a:hover, .header > nav a:focus {
+  color: #b2b2b2;
+}
+header > h1 {
+    font-family: 'Bungee Outline', cursive;
+}
+nav ul {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: .5px;
+}
+/*main content*/
+main > .card {
+    background-color: #f5f5f5;
+    border: none;
+}
+main > .card a > h3, main  .card-block a:hover, main  .card-block a:focus {
+  color: #000;
+  text-decoration: none;
+}
+.card-footer {
+  background-color: inherit;
+}
+.card-footer > .btn-outline-primary {
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#000;
+}
+.card-footer > .btn-outline-primary:hover, .card-footer > .btn-outline-primary:focus {
+                                               background-color: #000;
+                                               color: #fff;
+                                               box-shadow: none;
+}
+
+.container > nav .page-link {
+    border: none;
+    background-color: inherit;
+    color: #000;
+}
+.container > nav a.page-link:hover, .container > nav a.page-link:focus {
+  text-decoration: underline;
+}
+.page-item.active .page-link {
+  background-color: inherit;
+  border: none;
+  color: #000;
+  text-decoration: underline;
+}
+.page-item.disabled .page-link {
+  background-color: inherit;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+#bootstrap {
+  color: #e5e1ea;
+}
+.figure-caption {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000;
+}
+figure img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a.btn-secondary {
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+.list-group-item {
+ background-color: #f5f5f5;
+}
+.list-group-item a {
+  color: #000;
+}
+.list-group-item a:hover, .list-group-item a:focus {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+img.albums {
+  max-width: 200px;
+}
+.panel-body > h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.zhongwen {
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
