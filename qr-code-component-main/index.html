@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Outfit">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="container">
+  <div class="qrCodeComponent center roundBoard">
+    <img class="qrCode roundBoard" src="images/image-qr-code.png"/>
+    <p class="caption text-adjust">
+      <p class="aid text-adjust"></p>
+    </p>
+  </div>
+  <script>
+    const caption = document.querySelector('.caption');
+    const aid = document.querySelector('.aid');
+    caption.textContent = 'Imporve your front-end skills by building projects';
+    aid.textContent = 'Scan the QR code to visit Frontend Mentor and take your coding skills to the next level';
+  </script>
+</body>
+</html>

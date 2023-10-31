@@ -1,9 +1,0 @@
- <div class="contact row justify-content-end">
-    ｛% for item in site.contact %}
-       {% if item.icon == "envelope" %} 
-         <a href="{{ item.link }}" class="btn btn-link" id="{{ item.icon }}" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-       {% else %} 
-         <a href="{{ item.link }}" class="btn btn-link" id="{{ item.icon }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a> 
-       {％ endif ％} 
-    {％ endfor ％}
-</div> 
