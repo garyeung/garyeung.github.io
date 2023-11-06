@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+</head>
+<body>
+<div class="container">
+  <section id="header">
+   <img src="./assets/images/logo.svg" alt="logo" class="logo"/> 
+   <div class="navboard">
+    <div class="gray-board"></div>
+    <div class="menu-close-board">
+      <img src="./assets/images/icon-menu-close.svg" alt="menu-close" class="menu-close"/>
+    </div>
+    <nav class="">
+       <a class="nav-link" href="#home">   Home </a> 
+       <a class="nav-link" href="#new">   New </a>
+       <a class="nav-link" href="#popular">   Popular </a>
+       <a class="nav-link" href="#">   Trending </a>
+       <a class="nav-link" href="#">   Categories </a>
+    </nav>
+  </div>
+    <img src="./assets/images/icon-menu.svg" alt="menu" class="menu" />
+  </section>
+  <section id="home">
+    <img src="" alt="web 3" class="homeImg">
+    <h1>The Bright Future of Web 3.0?</h1>
+
+    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?</p>
+
+  <a href="" class="read-more"><span>Read more</span></a>  
+  </section>
+  <section id="new">
+  <h2>New</h2>
+  <div class="news">
+    <h3 class="news-title"><a href="">Hydrogen VS Electric Cars</a></h3>
+    <p class="news-caption">Will hydrogen-fueled cars ever catch up to EVs?</p>
+  </div>
+
+  <div  class="news">
+   <h3 class="news-title">
+     <a href="">
+     The Downsides of AI Artistry
+     </a>
+   </h3>
+   <p class="news-caption">
+    What are the possible adverse effects of on-demand AI image generation?
+   </p>
+  </div>
+
+  <div class="news">
+    <h3 class="news-title">
+     <a href="">
+      Is VC Funding Drying Up?
+     </a>
+    </h3>
+    <p class="news-caption">
+      Private funding by VC firms is down 50% YOY. We take a look at what that means.
+    </p>
+  </div>
+  </section>
+
+  <section id="popular">
+    <div class="popular-items">
+      <img class="popular-img" src="./assets/images/image-retro-pcs.jpg" alt="retro pcs"/>
+      <div class="popular-articles">
+        <h3 class="popular-rank">
+          01
+        </h3>
+        <h4 class="popular-title">
+          <a href="">
+            Reviving Retro PCs
+          </a>
+        </h4>
+        <p class="popular-caption">
+          What happens when old PCs are given modern upgrades?
+        </p>
+    </div>
+    </div>
+    <div class="popular-items">
+      <img class="popular-img" src="./assets/images/image-top-laptops.jpg" alt="top laptops"/>
+      <div class="popular-articles">
+        <h3 class="popular-rank">
+          02
+        </h3>
+        <h4 class="popular-title">
+          <a href="">
+          Top 10 Laptops of 2022
+          </a>
+        </h4>
+        <p class="popular-caption">
+          Our best picks for various needs and budgets.
+        </p>
+      </div>
+    </div>
+    <div class="popular-items">
+      <img class="popular-img" src="./assets/images/image-gaming-growth.jpg" alt="game growth"/>
+      <div class="popular-articles">
+        <h3 class="popular-rank">
+          03
+        </h3>
+        <h4 class="popular-title">
+          <a href="">
+          The Growth of Gaming
+          </a>
+        </h4>
+        <p class="popular-caption">
+          How the pandemic has sparked fresh opportunities.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>  
+<script src="script.js"></script>
+</body>
+</html>

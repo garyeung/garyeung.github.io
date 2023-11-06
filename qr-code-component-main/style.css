@@ -1,0 +1,52 @@
+:root{
+
+--white: hsl(0, 0%, 100%);
+--lightGray: hsl(212, 45%, 89%);
+--grayishBlue: hsl(220, 15%, 55%);
+--darkBlue: hsl(218, 44%, 22%);
+--normalWeight: 400;
+--boldWeight: 700;
+font-size: 15px;
+font-family: 'Outfit', serif;
+
+}
+body {
+    background-color: var(--lightGray);
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.qrCode {
+    width: 100%;
+}
+
+.qrCodeComponent {
+    width: 300px;
+    padding: 20px;
+    background: var(--white);
+}
+.roundBoard {
+    border-radius: 5%;
+}
+.text-adjust {
+    margin: 15px 5px;
+    text-align: center;
+}
+
+.qrCodeComponent .caption {
+    font-size: 1.5rem;
+    font-weight: var(--boldWeight);
+    color: var(--darkBlue);
+}
+.qrCodeComponent .aid {
+    color: var(--grayishBlue);
+    font-weight: var(--normalWeight);
+}
