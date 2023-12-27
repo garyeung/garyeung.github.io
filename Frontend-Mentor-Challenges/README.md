@@ -23,3 +23,7 @@ This is the folder where I submit projects to Frontend Mentor.
 - Solution URL: [Solution](https://github.com/garyeung/Frontend-Mentor-Challenges/tree/master/ecommerce-product-page-main)
 - Live Site URL: [Live](https://garyeung.github.io/Frontend-Mentor-Challenges/ecommerce-product-page-main)
 
+
+#### 6. IP Address Tracker
+- Solution URL: [IP Address Tracker Solution](https://github.com/garyeung/Frontend-Mentor-Challenges/tree/master/ip-address-tracker-master)
+- Live Site URL: [IP Address Tracker Live](https://garyeung.github.io/Frontend-Mentor-Challenges/ip-address-tracker-master)
