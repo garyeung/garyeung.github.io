@@ -27,3 +27,9 @@ This is the folder where I submit projects to Frontend Mentor.
 #### 6. IP Address Tracker
 - Solution URL: [IP Address Tracker Solution](https://github.com/garyeung/Frontend-Mentor-Challenges/tree/master/ip-address-tracker-master)
 - Live Site URL: [IP Address Tracker Live](https://garyeung.github.io/Frontend-Mentor-Challenges/ip-address-tracker-master)
+
+
+#### 7. Interactive Comments Section Main
+- Solution URL: [Interactive Comments Solution](https://github.com/garyeung/Frontend-Mentor-Challenges/tree/master/interactive-comments-section-main)
+- Live Site URL: [Interactive Comments Live](https://garyeung.github.io/Frontend-Mentor-Challenges/interactive-comments-section-main)
+
