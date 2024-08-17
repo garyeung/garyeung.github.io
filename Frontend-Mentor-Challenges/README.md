@@ -36,5 +36,5 @@ This is the folder where I submit projects to Frontend Mentor.
 
 ### 8. Expenses Chart
 - Solution URL: [Expenses Chart Solution](https://github.com/garyeung/Frontend-Mentor-Challenges/tree/master/expenses-chart-component-main)
-- Live Site URL: [Expenses Chart Live](https://garyeung.github.io/Frontend-Mentor-Challenges/expenses-chart-components-main)
+- Live Site URL: [Expenses Chart Live](https://garyeung.github.io/Frontend-Mentor-Challenges/expenses-chart-component-main)
 
