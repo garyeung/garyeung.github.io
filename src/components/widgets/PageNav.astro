@@ -1,0 +1,21 @@
+---
+import type { ILink } from '../../types/site'
+import PageButton from '../PageButton.astro'
+
+interface Props {
+    preLink: ILink | null
+    nextLink: ILink | null
+
+    
+}
+
+const {preLink, nextLink} = Astro.props
+
+---
+
+
+<nav class="flex justify-between gap-6 mt-8 flex-wrap">
+  <PageButton link={preLink}/>
+  <slot name="current-page"/>
+  <PageButton link={nextLink}/>
+</nav>

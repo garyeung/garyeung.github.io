@@ -1,0 +1,26 @@
+---
+import Github from '../assets/images/icons/github-brands.svg';
+import Rss from '../assets/images/icons/rss-solid.svg';
+import Email from '../assets/images/icons/envelope-solid.svg';
+import Tags from '../assets/images/icons/tags-solid.svg'; 
+import Other from '../assets/images/icons/face-smile-regular.svg';
+import Calendar from '../assets/images/icons/calendar-regular.svg';
+
+interface Props  {
+    name: string;
+}
+const { name } = Astro.props;
+
+const iconMap:{
+  [key:string]: ((_props: astroHTML.JSX.SVGAttributes) => any) & ImageMetadata
+} = {
+  other: Other,
+  github: Github,
+  rss: Rss,
+  email: Email,
+  tags: Tags,
+  calendar: Calendar
+};
+const IconComponent = iconMap[name.toLowerCase()] || Other;
+---
+<IconComponent class="h-4" />

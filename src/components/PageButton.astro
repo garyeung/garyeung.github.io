@@ -1,0 +1,16 @@
+---
+import LinkComponent from './Link.astro'
+import type {ILink as LinkType} from "../types/site"
+
+interface Props {
+    link: LinkType | null
+}
+
+const {link} = Astro.props
+
+---
+{
+    link?<LinkComponent url={link.href}, title={link.title}/>:
+    <div class="opacity-0 w-4" aria-hidden="true">
+    </div>
+}

@@ -1,0 +1,142 @@
+
+@layer components {
+    /*Markdown*/
+    .prose{
+
+    /* link */
+     a {
+        @apply link-decoration;
+
+    }
+    /* text */
+    p {
+       @apply my-8; 
+    }
+
+    img {
+        @apply rounded-md my-8;
+    }
+
+    figure {
+        @apply my-8;
+        
+        img {
+            @apply my-4;
+        }
+
+        figcaption {
+            @apply text-center text-secondary;
+        }
+    }
+    h1 {
+        @apply text-2xl my-8;
+    }
+    h2 {
+        @apply text-xl;
+    }
+    h3 {
+        @apply text-lg;
+    }
+    h4 {
+        @apply text-base;
+    }
+    h5 {
+        @apply text-sm;
+    }
+    h6 {
+        @apply text-xs;
+    }
+
+    hr {
+        @apply my-16 w-1/2 mx-auto h-auto text-secondary
+
+    }
+
+    code {
+         @apply bg-gray-100 rounded-sm p-1
+    }
+
+    blockquote {
+        @apply pl-4 ml-4 border-l-2 border-gray-400;
+
+    }
+    
+    sup a {
+        @apply no-underline p-[2px] text-secondary hover:text-black;
+    }
+
+    ol,ul {
+        @apply my-8 ml-8;
+
+        li {
+            @apply marker:text-gray-400 my-4;
+        }
+    }
+
+    ol {
+        @apply list-decimal;
+    }
+
+    ul {
+        @apply list-disc; 
+
+        li:has(input) {
+            @apply list-none;
+        }
+    }
+
+    input[type="checkbox"] {
+        @apply rounded-sm m-1;
+    }
+
+    table {
+        @apply my-8 table-fixed border-1 border-gray-300 rounded-md border-separate border-spacing-0 w-fit;
+        
+        thead {
+            @apply bg-gray-100;
+        }
+        th, td {
+                @apply border-r-gray-300 not-last:border-r-1 p-4 text-left;
+        }
+        td {
+            @apply border-t-gray-300 border-t-1;
+        }
+
+    }
+
+    pre {
+        @apply p-4 my-8 rounded-md;
+    code {
+        @apply bg-inherit;
+    }
+    }
+    
+
+    kbd {
+        @apply p-1 border-1 border-gray-300 rounded-sm text-center;
+    }
+
+    mark {
+        @apply p-1 rounded-sm;
+    }
+
+    .footnotes{
+        @apply my-12 before:w-1/2 before:border-gray-400 before:border-t-1 before:block;
+
+
+
+        #footnote-label {
+            @apply opacity-0;
+        }
+
+        a.data-footnote-backref {
+            @apply no-underline text-secondary;
+        }
+
+    }
+
+}
+
+
+
+}

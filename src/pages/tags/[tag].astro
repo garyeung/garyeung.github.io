@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {AllPosts, UniqueTags} from '../../utils/posts'
+import Icon from "../../components/Icon.astro"
+import PostList from "../../components/widgets/PostList.astro"
+
+export async function getStaticPaths() {
+
+  const allPosts = AllPosts;
+
+  const uniqueTags = UniqueTags as string[];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post) => post.data.tags.includes(tag));
+    return {
+      params: {tag},
+      props: {posts: filteredPosts},
+    }
+  })
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+
+---
+
+<Layout title={tag} description=''>
+  <div class="flex items-center gap-2">
+    <Icon name="tags"/> 
+    <h1 class="font-medium text-lg">{tag}</h1>
+  </div>
+  <PostList posts={posts}/>
+</Layout>

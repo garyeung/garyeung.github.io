@@ -1,0 +1,22 @@
+---
+import type { PostsEntry } from '../../types/posts'
+import PostItem from '../PostItem.astro'
+
+interface Props {
+    posts: PostsEntry[]
+}
+const {posts} = Astro.props
+---
+<ul class="group my-16">
+    {
+       posts.map(post => {
+        return <li class="group-hover:opacity-40 hover:opacity-100 transition-opacity trans my-8">
+          <PostItem
+          title={post.data.title}
+          url={`/posts/`+post.id}
+          pubDate={post.data.pubDate}
+          />
+        </li> 
+       }) 
+    }
+</ul>

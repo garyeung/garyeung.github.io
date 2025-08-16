@@ -1,0 +1,17 @@
+---
+import { config } from "../../../config";
+
+const pathName = Astro.url.pathname;
+const navLinks = config.site.routers;
+---
+<nav class="
+    flex 
+    justify-start 
+    gap-x-6 
+    my-6
+">
+    {navLinks.map(link => (
+        <a href={link.href} class={`link-decoration capitalize ${pathName === link.href? 'link-active':''}`} >
+        {link.title}</a> 
+    ))}
+</nav>

@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro"
+import { config } from "../../config";
+import PostList from "../components/widgets/PostList.astro";
+import About from "../components/widgets/About.astro"
+import { HomePageLatestPosts} from "../utils/posts";
+
+
+
+const pageTitle = config.site.title || "Home Page";
+const description = config.site.description || "Home page" 
+
+---
+
+<Layout title={pageTitle} description={description}>
+  <section>
+    <About/>
+  </section>
+	<section>
+    <PostList posts={HomePageLatestPosts}/>
+	</section>
+</Layout>

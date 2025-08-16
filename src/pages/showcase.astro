@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+const pageTitle = "Showcase";
+import { showcases } from "../data/showcaseData";
+import ShowcaseItem from "../components/widgets/ShowcaseItem.astro";
+---
+
+<Layout title={pageTitle} description="whatever">
+    <div class="flex justify-between flex-wrap gap-4">
+      {
+        showcases.map((showcase)=>
+            <ShowcaseItem {...showcase}/>
+        )
+      }
+    </div>
+</Layout>

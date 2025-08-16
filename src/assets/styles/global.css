@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf');
+    font-weight: 100 1000;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url('../fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quantico';
+    src: url('../fonts/Quantico/Quantico-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@import 'tailwindcss';
+@import './ui.css';
+@import './widgets.css';
+
+@layer base{
+    body {
+     font-family:  'Roboto Flex', sans-serif;
+    }
+
+    a {
+        @apply transition-colors;
+    }
+
+}
+
+/*Fonts*/
+@utility font-roboto-flex {
+     font-family:  'Roboto Flex', sans-serif;
+}
+@utility font-quantico {
+    font-family: 'Quantico', serif; 
+}
+
+/*Transition*/
+@utility trans {
+    @apply duration-300 ease-in-out;
+}
+
+/** Color **/
+@utility text-secondary {
+    @apply text-gray-400 fill-gray-400;
+}
+
+/** Link **/
+@utility link-decoration {
+        @apply underline underline-offset-2 decoration-gray-400 hover:decoration-black;
+   
+}
+@utility link-active {
+    @apply decoration-black;
+}

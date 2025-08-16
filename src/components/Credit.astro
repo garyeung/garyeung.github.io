@@ -1,0 +1,23 @@
+---
+import { config } from "../../config";
+const credits = config.site.credits
+---
+
+<div class="flex flex-row gap-1">
+    <p>Powered by</p>
+    <ul class="flex gap-1">
+    {
+       credits.map((item) => {
+        return (
+            <li class="
+              not-first:before:content-[',']
+              last:before:content-['&']
+              ">
+              <a class=`${item.title} capitalize`
+              href={"https://" + item.href}>{item.title}</a>
+            </li>
+        )
+       }) 
+    }
+    </ul>
+</div>

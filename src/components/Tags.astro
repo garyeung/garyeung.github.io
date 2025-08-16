@@ -1,0 +1,24 @@
+---
+import Icon from "./Icon.astro";
+import  Link  from "../components/Link.astro"
+interface Props {
+    tags: string[]
+}
+
+const {tags} = Astro.props;
+
+---
+{
+tags.length > 0 && <div class="flex items-center gap-4 flex-wrap my-4">
+  <div class="self-center">
+   <Icon name='tags'/>
+  </div>
+  {
+  tags.map((tag:any) => (
+    <div>
+    <Link url={`/tags/${tag}`} title={tag}/>
+    </div>)
+    )
+  }
+</div>
+}

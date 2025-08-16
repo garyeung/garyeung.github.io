@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { AllPosts } from '../../utils/posts';
+import { config } from '../../../config';
+import PostList from '../../components/widgets/PostList.astro';
+import PageNav from '../../components/widgets/PageNav.astro';
+const pageTitle = "Posts";
+const description = "All posts"
+
+const pageSize = config.post.pageSize;
+
+const allPosts = AllPosts;
+const currentPosts = allPosts.slice(0,pageSize) 
+---
+<Layout title={pageTitle} description={description}>
+  <PostList posts={currentPosts}/>
+
+  {allPosts.length > pageSize && 
+  <PageNav preLink={null}
+  nextLink={{
+    title:"next",
+    href: "/posts/2"
+  }}
+  />
+</Layout>

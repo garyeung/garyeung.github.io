@@ -1,0 +1,40 @@
+---
+// src/pages/blog/[slug].astro
+import { render } from 'astro:content';
+import PostLayout from '../../layouts/PostLayout.astro';
+import type { PostsEntry } from '../../types/posts';
+import { LatestPosts } from '../../utils/posts';
+import PageNav from '../../components/widgets/PageNav.astro';
+import type { ILink } from '../../types/site';
+
+export async function getStaticPaths() {
+  const posts:PostsEntry[] = LatestPosts
+  return posts.map((post,index) => ({
+    params: { slug: post.id },
+    props: { post,
+      prevPost: index > 0 ? posts[index-1] : null,
+      nextPost: index < posts.length -1 ? posts[index+1] : null
+     },
+  }));
+}
+
+const { post, prevPost, nextPost } = Astro.props;
+const { Content } = await render(post); // Renders Markdown content
+
+const prevPostLink: ILink | null = prevPost? {
+  title: prevPost.id,
+  href: `/posts/`+ prevPost.id
+}: null;
+
+const nextPostLink: ILink | null = nextPost? {
+  title: nextPost.id,
+  href: `/posts/`+nextPost.id
+}: null; 
+---
+<PostLayout frontmatter={post.data}>
+  <Content />
+  <PageNav 
+    preLink={prevPostLink}
+    nextLink={nextPostLink}
+  />
+</PostLayout>

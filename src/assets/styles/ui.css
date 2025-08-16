@@ -1,0 +1,21 @@
+
+@layer components {
+
+}
+
+/** Icon **/
+@utility astro {
+      @apply hover:text-white;
+  }
+  
+@utility tailwindcss {
+      @apply hover:text-[#00bcff];
+  }
+  
+@utility email {
+      @apply hover:fill-[#006bbe] hover:text-[#006bbe];
+  }
+  
+@utility github {
+        @apply hover:fill-[#6a7282] hover:text-[#1f2328];
+    }

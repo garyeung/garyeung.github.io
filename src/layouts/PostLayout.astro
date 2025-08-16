@@ -1,0 +1,58 @@
+---
+import CustomDate from '../components/CustomDate.astro';
+import Image from '../components/Image.astro';
+import Tags from '../components/Tags.astro';
+import type { Frontmatter } from '../types/posts';
+import Layout from './Layout.astro';
+
+interface Props {
+  frontmatter: Frontmatter
+}
+
+const { frontmatter } = Astro.props; 
+const { title, author, pubDate, description, heroImage, tags, updateDate } = frontmatter;
+---
+<Layout title={title} description={description}>
+  <article class="prose">
+    <header>
+      <h1 class="my-2">{title}</h1>
+      <div class="text-sm text-secondary italic">
+        <div class="flex gap-2">
+          <div class="
+           not-last:after:content-[';']">
+             <CustomDate date={pubDate}/>
+          </div>
+        {  updateDate && <div class="">
+          <span>Updated</span>
+          <CustomDate date={updateDate}/>
+          </div>
+         }
+        </div>
+        <div>
+          <span>{author}</span>
+        </div>
+      </div>
+      {heroImage && 
+      (
+        <div class="my-2">
+        <Image src={heroImage.url} title={heroImage.alt}/>
+        </div>
+      )}
+
+      {
+        description && 
+
+        <blockquote>
+          <p class="text-gray-400">{description}</p>
+        </blockquote>
+      
+      }
+    </header>
+    <section class="my-4">
+      <slot /> 
+    </section>
+    <footer>
+      <Tags tags={tags}/>
+    </footer>
+  </article>
+</Layout>

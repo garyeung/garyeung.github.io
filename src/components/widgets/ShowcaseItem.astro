@@ -1,0 +1,22 @@
+---
+import Image from '../Image.astro';
+
+interface Props {
+    title: string,
+    description?: string,
+    liveLink: string,
+    codeLink: string
+    thumbnail: string
+}
+
+const { title, liveLink, codeLink, thumbnail } = Astro.props;
+---
+<div class="flex flex-col items-center max-w-80 overflow-auto">
+  <h2 class="text-lg">{title}</h2>
+
+  <Image src={thumbnail} title={title}/>
+  <div class="flex justify-between gap-8">
+    <a class="link-decoration capitalize" href={liveLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
+    <a class="link-decoration capitalize" href={codeLink} target="_blank" rel="noopener noreferrer">Source Code</a>
+  </div>
+</div>

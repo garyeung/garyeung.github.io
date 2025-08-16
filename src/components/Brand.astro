@@ -1,0 +1,10 @@
+---
+interface Props {
+  brandName: string;
+  description: string;
+}
+const { brandName } = Astro.props;
+---
+<div class="my-2">
+    <a href="/" class="uppercase font-medium ">{brandName}</a>
+</div>

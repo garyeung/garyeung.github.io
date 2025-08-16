@@ -1,0 +1,44 @@
+---
+import type {PaginateFunction } from "astro";
+import Layout from '../../layouts/Layout.astro';
+import { LatestPosts } from "../../utils/posts";
+import { config } from "../../../config";
+import PostList from "../../components/widgets/PostList.astro";
+import PageNav from "../../components/widgets/PageNav.astro";
+import type { ILink } from "../../types/site";
+
+
+export function getStaticPaths({paginate}:{paginate: PaginateFunction}){
+  const allPosts = LatestPosts;
+  const pageSize = config.post.pageSize;
+
+    return paginate(allPosts,{pageSize});
+};
+
+const {page} = Astro.props;
+const pageTitle = `Posts - page ${page.currentPage}`;
+const description = pageTitle + "page"
+
+const prePage: ILink | null = page.url.prev?{
+  href: page.url.prev,
+  title: "previous"
+}: null;
+
+const nextPage: ILink | null = page.url.next? {
+  href: page.url.next,
+  title: "next"
+}: null;
+---
+<Layout title={pageTitle} description={description}>
+  <div>
+    <PostList posts={page.data}/>
+    <PageNav 
+      preLink={prePage} 
+      nextLink={nextPage}
+    >
+      <div class="flex justify-center items-center" slot="current-page">
+        <span>{page.currentPage+" / "+page.total}</span>
+      </div>
+    </PageNav>
+  </div>
+</Layout>

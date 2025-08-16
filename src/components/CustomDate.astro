@@ -1,0 +1,10 @@
+---
+import formattedDate from "../utils/formattedDate";
+interface Props {
+    date: Date | string;
+}
+
+const {date} = Astro.props;
+---
+<span class="">{formattedDate(new Date(date))}
+</span>
