@@ -8,7 +8,7 @@
       @apply hover:text-white;
   }
   
-@utility tailwindcss {
+@utility tailwind {
       @apply hover:text-[#00bcff];
   }
   

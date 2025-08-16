@@ -27,7 +27,7 @@ const site: ISite = {
     href: 'astro.build/'    
   },
   {
-    title: 'Tailwind CSS',
+    title: 'tailwind CSS',
     href: 'tailwindcss.com/'
   }
   ]

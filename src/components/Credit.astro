@@ -13,7 +13,7 @@ const credits = config.site.credits
               not-first:before:content-[',']
               last:before:content-['&']
               ">
-              <a class=`${item.title} capitalize`
+              <a class=`capitalize ${item.title.startsWith("tailwind")?"tailwind": item.title}`
               href={"https://" + item.href}>{item.title}</a>
             </li>
         )
