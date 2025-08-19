@@ -12,4 +12,4 @@ Like a lot of developers, I'm captivated by code and the amazing things it can c
 
 I started this blog to share my journey, my code, and my thoughts. This is a place to document my learning process, dive into topics that spark my curiosity, and explore a few ideas that come to me along the way.
 
- I hope you find something here that inspires you to think differently, too : \)
+ I hope you find something here that inspires you to think differently, too :\)
