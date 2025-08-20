@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # website building draft
 goals.md
+
+## vscode config
+.vscode/
