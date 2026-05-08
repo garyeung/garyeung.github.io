@@ -3,6 +3,8 @@ import { defineConfig } from 'astro/config';
 import remarkGfm from 'remark-gfm'
 import tailwindcss from '@tailwindcss/vite';
 import {rehypeImageProcessor} from './src/plugins/rehype-plugins';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,10 +15,12 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [
       remarkGfm,
+      remarkMath
     ],
 
     rehypePlugins: [
-      rehypeImageProcessor
+      rehypeImageProcessor,
+      rehypeKatex
 
     ]
   }
