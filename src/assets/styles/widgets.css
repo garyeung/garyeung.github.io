@@ -29,22 +29,22 @@
         }
     }
     h1 {
-        @apply text-2xl my-8;
+        @apply text-3xl my-8;
     }
     h2 {
-        @apply text-xl;
+        @apply text-2xl;
     }
     h3 {
-        @apply text-lg;
+        @apply text-xl;
     }
     h4 {
-        @apply text-base;
+        @apply text-lg;
     }
     h5 {
-        @apply text-sm;
+        @apply text-base font-bold;
     }
     h6 {
-        @apply text-xs;
+        @apply text-xs font-bold;
     }
 
     hr {
