@@ -85,7 +85,7 @@ The pension benefits are paid monthly and comprised of two component: Basic Pens
 - The Basic Pension is paid by the local government. Different provincial governments have different ways of calculating the Basic Pension. 
 - The Individual Account is calculated by dividing the insured person's individual account balance by an allocation coefficient.
 
-## Examples for employees of Guangzhou
+### Examples for employees of Guangzhou
 The Basic Pension in Guangzhou is calculated based on the average salary of employees in Guangdong province. 
 The following samples are to be considered:
 - Salary equivalent to 60% of the provincial average for employees,
