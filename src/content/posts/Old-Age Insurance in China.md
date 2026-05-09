@@ -1,6 +1,7 @@
 ---
 title: 'Introduce Old Age Insurance in China and provide examples from Guangzhou'
 pubDate: 2026-05-08
+updateDate: 2026-05-09
 author: 'Gary Yeung' 
 description: 'What kind of support should a society provide for the elderly?'
 tags: ['society']
@@ -32,17 +33,17 @@ Individuals who have reached the age of 60 and have made contributions totalling
 
 ### An example for residents of Guangzhou
 
-#### Table for Contribution Rates and Projected Pensions for the Guangzhou Urban and Rural Residents's Pension Scheme (2021-2026)[^4]
+#### Table for Contribution Rates and Projected Pensions for the Guangzhou Urban and Rural Residents' Pension Scheme (2021-2026)[^4]
 
-| Grade       | Individual Contribution (Yuan/Year) | Gov Subsidy (Corresponding) | Collective Subsidy | Gov Subsidy (Collective) | Total Personal Account after 15 Years (excl. interest) | Predicted Monthly Pension (Yuan) | of which: Personal Account Pension |
-| :---------- | ----------------------------------: | --------------------------: | -----------------: | -----------------------: | -----------------------------------------------------: | -------------------------------: | ---------------------------------: |
-| Grade 1     |                                 360 |                         420 |                360 |                      300 |                                                 21,600 |                              392 |                                155 |
-| Grade 2     |                                 600 |                         600 |                600 |                      420 |                                                 33,300 |                              477 |                                240 |
-| Grade 3     |                                 900 |                         780 |                900 |                      480 |                                                 45,900 |                              567 |                                330 |
-| Grade 4     |                                1200 |                         870 |               1200 |                      480 |                                                 56,250 |                              642 |                                405 |
-| Grade 5     |                                1800 |                         960 |               1800 |                      480 |                                                 75,600 |                              781 |                                544 |
-| Grade 6     |                                3600 |                         960 |               3600 |                      480 |                                                129,600 |                             1169 |                                932 |
-| Grade 7     |                                4800 |                         960 |               4800 |                      480 |                                                165,600 |                             1428 |                               1191 |
+| Grade   | Individual Contribution (Yuan/Year) | Gov Subsidy (Corresponding) | Collective Subsidy | Gov Subsidy (Collective) | Total Personal Account after 15 Years (excl. interest) | Predicted Monthly Pension (Yuan) | of which: Personal Account Pension |
+| :------ | ----------------------------------: | --------------------------: | -----------------: | -----------------------: | -----------------------------------------------------: | -------------------------------: | ---------------------------------: |
+| Grade 1 |                                 360 |                         420 |                360 |                      300 |                                                 21,600 |                              392 |                                155 |
+| Grade 2 |                                 600 |                         600 |                600 |                      420 |                                                 33,300 |                              477 |                                240 |
+| Grade 3 |                                 900 |                         780 |                900 |                      480 |                                                 45,900 |                              567 |                                330 |
+| Grade 4 |                                1200 |                         870 |               1200 |                      480 |                                                 56,250 |                              642 |                                405 |
+| Grade 5 |                                1800 |                         960 |               1800 |                      480 |                                                 75,600 |                              781 |                                544 |
+| Grade 6 |                                3600 |                         960 |               3600 |                      480 |                                                129,600 |                             1169 |                                932 |
+| Grade 7 |                                4800 |                         960 |               4800 |                      480 |                                                165,600 |                             1428 |                               1191 |
 
 **Notice**: Since 1 January, 2020 the Basic Pension in Guangzhou has been 237 yuan per month.
 
@@ -94,11 +95,15 @@ The following samples are to be considered:
 The calculation of the Basic Pension in Guangzhou is slightly complicated. In 2021, the Guangdong People's Government published a document about the calculation method for the Basic Pension from 2021 to 2025[^13].  It appears that the basic old-age insurance fund is to be overseen by the national government rather than the provincial authorities.[^14]   
 According to the document, the calculation of the Basic Pension for individuals retiring between 2021 and 2025 is as follows:
 
-$$ \text{Basic Pension} = \text{Pension Calculation Base} \times \text{Average Contribution Index} \times \text{Contribution Years} \times 1.2\% $$
+$$ 
+\text{P} = \text{B} \times \text{I} \times \text{Y} \times 1.2\% 
+$$
 
-- The Pension Calculation Base is the average salary of Guangdong employees in the previous year.
-- The Average Contribution Index is the provincial average salary of employees in the previous year divided by the average salary of insured employees. 
-- Contribution Years are the pension insurance contribution period. 
+Where:
+- P = Basic Pension
+- B = Pension Calculation Base which is the average salary of Guangdong employees in the previous year.
+- I = Average Contribution Index which is the provincial average salary of employees in the previous year divided by the average salary of insured employees. 
+- Y = Contribution Years which are the pension insurance contribution period. 
 
 #### Guangdong Pension Calculation Base (2021–2025)[^15]
 
@@ -156,7 +161,7 @@ In order to calculate the Individual Account,  it is assumed that the insured pe
 | **2006**  | 2,200.00                       | 1,267.20                    | 2,112.00                     | 6,336.00                     |
 | **TOTAL** | —                              | **39,876.86**               | **66,461.43**                | **199,384.30**               |
 
-## Salary equivalent to 60% of the provincial average for employees
+### Salary equivalent to 60% of the provincial average for employees
 The Basic Pension for employees who have contributed for 15 years and whose average salary was equivalent to 60% of the provincial average salary is calculated as follows:  
 
 $$
@@ -271,7 +276,7 @@ The rate may differ for the policies in different provinces.
 
 [^9]: [State Council of the PRC. "Comprehensive Plan for Reducing Social Insurance Contribution Rates" (Guo Fa [2019] No.13)](https://www.gov.cn/zhengce/content/2019-04/04/content_5379629.htm)
 
-[^10]: [State Council of the PRC. "Decision on the Reform of the Pension Insurance System for Staff of Government Agencies and Public Institutions" (Go Fa [2015] No.2), Article 3](https://www.gov.cn/zhengce/content/2015-01/14/content_9394.htm)
+[^10]: [State Council of the PRC. "Decision on the Reform of the Pension Insurance System for Staff of Government Agencies and Public Institutions" (Guo Fa [2015] No.2), Article 3](https://www.gov.cn/zhengce/content/2015-01/14/content_9394.htm)
 
 [^11]: [Standing Committee of the National People's Congress. "Decision on the Implementation of a Gradual Increase in the Statutory Retirement Age", 13 September 2024](https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/zcfg/fl/202411/t20241125_530761.html)
 
