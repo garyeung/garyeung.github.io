@@ -22,12 +22,12 @@ const { post, prevPost, nextPost } = Astro.props;
 const { Content } = await render(post); // Renders Markdown content
 
 const prevPostLink: ILink | null = prevPost? {
-  title: prevPost.id,
+  title: prevPost.data.title,
   href: `/posts/`+ prevPost.id
 }: null;
 
 const nextPostLink: ILink | null = nextPost? {
-  title: nextPost.id,
+  title: nextPost.data.title,
   href: `/posts/`+nextPost.id
 }: null; 
 ---
